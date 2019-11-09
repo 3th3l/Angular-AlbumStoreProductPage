@@ -1,0 +1,16 @@
+
+  <div class="row tracklisting">
+    <ul>
+      <li *ngFor="let track of tracks">
+        {{ albumInfo?.tracks }}
+        <div class="col-sm-5">
+          <span class="track-number">{{ albumInfo?.tracks.trackNumber }}</span>
+          <span class="track-name">{{ albumInfo?.tracks.trackName }}</span>
+        </div>
+        <div class="col-sm-3 text-right">
+          <span class="track-time">{{ albumInfo?.tracks.trackLength }}</span>
+          <span class="price-and-buy"><button>{{ albumInfo?.tracks.trackPrice }}</button></span>
+        </div>
+      </li>
+    </ul>
+  </div>
